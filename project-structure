@@ -1,0 +1,8 @@
+personal-website/
+├── index.html
+├── styles/
+│   └── main.css
+├── scripts/
+│   └── main.js
+└── assets/
+    └── images/ 
