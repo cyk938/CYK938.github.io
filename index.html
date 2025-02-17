@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>蔡一坤的个人网站</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <!-- 添加背景容器，放在body的最前面 -->
+    <div id="particles-bg"></div>
+    
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">蔡一坤</div>
@@ -39,29 +43,9 @@
                     <h3>你好，我是<span class="highlight">蔡一坤</span></h3>
                     <p class="intro">我是一名充满热情的全栈开发者，专注于创建优雅且实用的web应用。</p>
                     
-                    <div class="experience">
-                        <h4>工作经历</h4>
-                        <ul>
-                            <li>高级前端开发工程师 @ XX公司 (2020-至今)</li>
-                            <li>全栈开发工程师 @ XX科技 (2018-2020)</li>
-                        </ul>
-                    </div>
-                    
                     <div class="education">
                         <h4>教育背景</h4>
-                        <p>计算机科学学士 @ XX大学 (2014-2018)</p>
-                    </div>
-                </div>
-                
-                <div class="skills">
-                    <h4>技术栈</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Python</span>
+                        <p>本科学历</p>
                     </div>
                 </div>
             </div>
@@ -73,11 +57,38 @@
     </section>
 
     <section id="blog" class="blog">
-        <!-- 博客内容将在这里 -->
+        <div class="container">
+            <h2 class="section-title">每日法语</h2>
+            <div class="daily-words">
+                <div class="word-list" id="wordList">
+                    <!-- 单词将通过 JavaScript 动态添加 -->
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="contact">
-        <!-- 联系方式将在这里 -->
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>电话：13950074505</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>邮箱：2169847497@qq.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-weixin"></i>
+                            <span>微信：Cyk992019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>

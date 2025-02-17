@@ -4,5 +4,11 @@ personal-website/
 │   └── main.css
 ├── scripts/
 │   └── main.js
-└── assets/
-    └── images/ 
+├── assets/
+│   ├── images/
+│   └── audio/
+│       ├── bonjour.mp3
+│       ├── merci.mp3
+│       ├── au_revoir.mp3
+│       └── ...
+└── CNAME 

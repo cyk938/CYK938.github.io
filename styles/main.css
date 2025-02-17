@@ -15,13 +15,15 @@ body {
     padding-top: 60px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #e2e8f0;
+    background: transparent;
 }
 
 .navbar {
     position: fixed;
     width: 100%;
-    background: var(--bg-color);
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     z-index: 1000;
     top: 0;
@@ -44,7 +46,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #e2e8f0;
 }
 
 .hero {
@@ -126,6 +128,7 @@ section {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     position: relative;
+    color: #e2e8f0;
 }
 
 .section-title::after {
@@ -141,7 +144,8 @@ section {
 
 /* 关于我部分样式 */
 .about {
-    background: #f8fafc;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
 }
 
 .about-content {
@@ -163,7 +167,7 @@ section {
 .intro {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #4b5563;
+    color: #cbd5e1;
 }
 
 .experience, .education {
@@ -183,6 +187,7 @@ section {
     margin-bottom: 0.5rem;
     position: relative;
     padding-left: 1.5rem;
+    color: #cbd5e1;
 }
 
 .experience li::before {
@@ -190,28 +195,6 @@ section {
     color: var(--primary-color);
     position: absolute;
     left: 0;
-}
-
-.skills {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin-top: 1rem;
-}
-
-.skill-tag {
-    background: var(--primary-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
 }
 
 /* 响应式设计 */
@@ -227,4 +210,127 @@ section {
     .about-text h3 {
         font-size: 1.5rem;
     }
+}
+
+#particles-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #0f172a, #1e293b);
+    z-index: -1;
+}
+
+footer {
+    background: rgba(15, 23, 42, 0.8);
+    padding: 1rem 0;
+    backdrop-filter: blur(8px);
+}
+
+/* 联系方式部分样式 */
+.contact {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(10px);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* 每日法语单词样式 */
+.blog {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+.daily-words {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.word-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.word-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.play-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.play-button:active {
+    transform: scale(0.95);
+}
+
+.word-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.word-french {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.word-pinyin {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.word-chinese {
+    color: #e2e8f0;
+    font-size: 1.2rem;
 } 
